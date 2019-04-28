@@ -8,7 +8,7 @@ There are two general approaches to anomaly detection:
 1. model what normal looks like and then look for nonnormal observations
 2. focus on the anomalies, which are few and different. This is the interesting and relatively-new approach taken by the authors of isolation forests.
 
-The isolation forest algorithm is original and beautiful in its simplicity; and also seems to work very well, with a few known weaknesses. The academic paper is extremely readable so you should start there.
+The isolation forest algorithm is original and beautiful in its simplicity; and also seems to work very well, with a few known weaknesses.
 
 ## Datasets
 
@@ -77,7 +77,5 @@ INFO cancer.csv 8204 total nodes in 1000 trees
 INFO cancer.csv score time 0.73s
 SUCCESS cancer.csv 1000 trees at desired TPR 75.0% getting FPR 0.2857%
 ```
-
-Due to the subsampling of the original data said and the inherent random nature of isolation forest, your results will differ even from run to run.  I'm hoping that the variance is not so high that valid programs fail the scoring, but let me know.
 
 Hooray !
